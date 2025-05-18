@@ -1,0 +1,10 @@
+streamlit
+pandas
+nltk
+matplotlib
+wordcloud
+pyLDAvis
+Sastrawi
+gensim
+scipy
+numpy

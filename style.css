@@ -1,0 +1,125 @@
+/* styles.css */
+/* Base container with smooth gradient */
+.reportview-container, .main {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Poppins', sans-serif;
+    color: #f1f5f9;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* Fancy title with gradient text */
+.main-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 2rem;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeInUp 1s ease;
+}
+
+/* Subtitle with glowing border */
+.subtitle {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 4px solid #00c6ff;
+    font-weight: 600;
+    color: #ffffffcc;
+    animation: fadeInUp 1.3s ease;
+}
+
+/* Sidebar style - glass effect */
+[data-testid="stSidebar"] {
+    background: rgba(15, 32, 39, 0.6);
+    backdrop-filter: blur(12px);
+    border-right: 1px solid rgba(255,255,255,0.05);
+    color: #f1f5f9;
+    padding-top: 2rem;
+}
+
+/* Sidebar title */
+[data-testid="stSidebar"] h2 {
+    color: #00c6ff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* Beautiful neumorphic buttons */
+.css-1emrehy.edgvbvh3 {
+    background: #0072ff !important;
+    color: #fff !important;
+    border-radius: 14px !important;
+    font-weight: 700 !important;
+    padding: 12px 0 !important;
+    margin-top: 16px !important;
+    box-shadow: 0 8px 20px rgba(0,114,255,0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.css-1emrehy.edgvbvh3:hover {
+    background: #00c6ff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,198,255,0.4);
+}
+
+/* DataFrame box */
+.stDataFrame > div[data-testid="stVerticalBlock"] > div {
+    background: rgba(255,255,255,0.06) !important;
+    border-radius: 12px !important;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    padding: 10px;
+    color: #e2e8f0 !important;
+    font-size: 0.95rem !important;
+}
+
+/* Hover on table row */
+.dataframe tbody tr:hover {
+    background-color: rgba(0,198,255,0.12) !important;
+    color: #00c6ff !important;
+}
+
+/* Canvas/Wordcloud */
+canvas, svg {
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+canvas:hover, svg:hover {
+    transform: scale(1.03);
+}
+
+/* PyLDAvis iframe */
+iframe {
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Scrollbar style */
+.components-placeholder {
+    scrollbar-width: thin;
+    scrollbar-color: #00c6ff #2c3e50;
+}
+.components-placeholder::-webkit-scrollbar {
+    width: 8px;
+}
+.components-placeholder::-webkit-scrollbar-track {
+    background: #2c3e50;
+}
+.components-placeholder::-webkit-scrollbar-thumb {
+    background-color: #00c6ff;
+    border-radius: 20px;
+    border: 2px solid #2c3e50;
+}
+
+/* Fade animation */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
